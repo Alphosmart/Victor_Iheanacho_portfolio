@@ -136,6 +136,7 @@ const trustMetrics = [
   '20% better milestone delivery in fibre deployment',
   '95% schedule adherence on E&I commissioning',
   '30% operational efficiency uplift in IT systems',
+  'Proven delivery leadership in construction and infrastructure projects',
 ]
 
 const featuredProjects = [
@@ -183,46 +184,6 @@ const featuredProjects = [
       'Delivered on schedule while protecting scope quality and stakeholder confidence.',
     image: 'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM.jpeg',
   },
-]
-
-const projectGalleryImages = [
-  'Projects/Building schedule.png',
-  'Projects/WhatsApp Image 2026-03-30 at 3.22.53 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM (2).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.36.28 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.11 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.13 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.13 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.14 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.15 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.15 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.16 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.17 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.17 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.18 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.18 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.19 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.20 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.21 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.21 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.22 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.22 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.38.23 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM (2).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM.jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (1).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (2).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (3).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (4).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (5).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (6).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (7).jpeg',
-  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM.jpeg',
 ]
 
 const services = [
@@ -278,7 +239,6 @@ function App() {
         <p className="brand">Victor I. PMP</p>
         <div>
           <a href="#projects">Projects</a>
-          <a href="#gallery">Gallery</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </div>
@@ -333,13 +293,9 @@ function App() {
 
           <aside className="hero-visual" aria-label="Project leadership visuals">
             <img
+              className="profile-static"
               src={profileImageUrl}
               alt="Portrait of Iheanacho Victor Ugochukwu"
-            />
-            <img
-              className="hero-secondary"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
-              alt="Project planning dashboard and teamwork"
             />
             <div className="floating-note">Multi-Sector Delivery Expert</div>
             <div className="floating-note accent">Agile + Waterfall Governance</div>
@@ -448,28 +404,6 @@ function App() {
                 </p>
               </div>
             </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="panel photo-gallery-panel" id="gallery">
-        <div className="section-heading">
-          <h2>Project Gallery</h2>
-          <p>
-            Complete collection of project pictures across planning,
-            construction, deployment, and execution activities.
-          </p>
-        </div>
-        <div className="photo-gallery-grid">
-          {projectGalleryImages.map((imagePath, index) => (
-            <figure className="gallery-item" key={imagePath}>
-              <img
-                src={`${import.meta.env.BASE_URL}${encodeURI(imagePath)}`}
-                alt={`Project photo ${index + 1}`}
-                loading="lazy"
-              />
-              <figcaption>Project Snapshot {index + 1}</figcaption>
-            </figure>
           ))}
         </div>
       </section>
