@@ -232,6 +232,9 @@ const processSteps = [
 ]
 
 function App() {
+  const cvUrl = `${import.meta.env.BASE_URL}Assets/My%20CV.pdf`
+  const profileImageUrl = `${import.meta.env.BASE_URL}Assets/Victor%20pix.jpg`
+
   return (
     <main className="site-shell">
       <nav className="top-nav">
@@ -272,7 +275,7 @@ function App() {
               <a href="https://x.com/sirfederals" target="_blank" rel="noreferrer">
                 X Profile
               </a>
-              <a className="cv-download" href="/Assets/My%20CV.pdf" download>
+              <a className="cv-download" href={cvUrl} download>
                 Download CV
               </a>
               <a className="primary-action" href="#contact">
@@ -289,7 +292,7 @@ function App() {
 
           <aside className="hero-visual" aria-label="Project leadership visuals">
             <img
-              src="/Assets/Victor%20pix.jpg"
+              src={profileImageUrl}
               alt="Portrait of Iheanacho Victor Ugochukwu"
             />
             <img
@@ -504,7 +507,7 @@ function App() {
             <span>X</span>
             <strong>x.com/sirfederals</strong>
           </a>
-          <a href="/Assets/My%20CV.pdf" download>
+          <a href={cvUrl} download>
             <span>Curriculum Vitae</span>
             <strong>Download CV</strong>
           </a>
