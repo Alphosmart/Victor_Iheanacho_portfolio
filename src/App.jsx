@@ -148,8 +148,7 @@ const featuredProjects = [
       'Built integrated Primavera P6 schedules, coordinated fibre and civil interfaces, and introduced recovery triggers.',
     outcome:
       'Improved milestone delivery by 20% and reduced delay exposure by 20% across active work fronts.',
-    image:
-      'https://images.unsplash.com/photo-1563770660941-10a636076b4a?auto=format&fit=crop&w=1200&q=80',
+    image: 'Projects/Building schedule.png',
   },
   {
     title: 'Lubricant Blending Plant E&I Delivery',
@@ -160,8 +159,7 @@ const featuredProjects = [
       'Implemented baseline monitoring, RCA/FMEA risk workflows, and disciplined weekly variance governance.',
     outcome:
       'Maintained 95% schedule adherence and improved commissioning readiness before plant startup.',
-    image:
-      'https://images.unsplash.com/photo-1581092919535-7146ff1a590d?auto=format&fit=crop&w=1200&q=80',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.22.53 PM.jpeg',
   },
   {
     title: 'Residential Construction Execution',
@@ -172,8 +170,7 @@ const featuredProjects = [
       'Developed detailed WBS sequencing and applied critical path controls with active resource coordination.',
     outcome:
       'Delivered full-scope residential build on time while maintaining quality and HSE compliance.',
-    image:
-      'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM.jpeg',
   },
   {
     title: 'Quicksilver Digital Transformation Project',
@@ -184,9 +181,48 @@ const featuredProjects = [
       'Created integrated WBS dependencies and orchestrated cross-functional delivery checkpoints.',
     outcome:
       'Delivered on schedule while protecting scope quality and stakeholder confidence.',
-    image:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM.jpeg',
   },
+]
+
+const projectGalleryImages = [
+  'Projects/Building schedule.png',
+  'Projects/WhatsApp Image 2026-03-30 at 3.22.53 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM (2).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.22.55 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.36.28 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.11 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.13 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.13 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.14 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.15 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.15 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.16 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.17 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.17 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.18 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.18 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.19 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.20 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.21 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.21 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.22 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.22 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.38.23 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM (2).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.46 PM.jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (1).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (2).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (3).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (4).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (5).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (6).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM (7).jpeg',
+  'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM.jpeg',
 ]
 
 const services = [
@@ -234,6 +270,7 @@ const processSteps = [
 function App() {
   const cvUrl = `${import.meta.env.BASE_URL}Assets/My%20CV.pdf`
   const profileImageUrl = `${import.meta.env.BASE_URL}Assets/Victor%20pix.jpg`
+  const whatsappUrl = 'https://wa.me/2347062733935?text=Hello%20Victor%2C%20I%20would%20like%20to%20discuss%20a%20project.'
 
   return (
     <main className="site-shell">
@@ -241,6 +278,7 @@ function App() {
         <p className="brand">Victor I. PMP</p>
         <div>
           <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
         </div>
@@ -265,6 +303,9 @@ function App() {
                 iheanachofederals8@gmail.com
               </a>
               <a href="tel:+2348093726082">+2348093726082</a>
+              <a href={whatsappUrl} target="_blank" rel="noreferrer">
+                WhatsApp Chat
+              </a>
               <a
                 href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/"
                 target="_blank"
@@ -387,7 +428,12 @@ function App() {
         <div className="project-grid">
           {featuredProjects.map((project) => (
             <article className="project-card" key={project.title}>
-              <img src={project.image} alt={project.title} loading="lazy" />
+              <img
+                src={`${import.meta.env.BASE_URL}${encodeURI(project.image)}`}
+                alt={project.title}
+                loading="lazy"
+              />
+
               <div className="project-card-body">
                 <p className="project-sector">{project.sector}</p>
                 <h3>{project.title}</h3>
@@ -402,6 +448,28 @@ function App() {
                 </p>
               </div>
             </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="panel photo-gallery-panel" id="gallery">
+        <div className="section-heading">
+          <h2>Project Gallery</h2>
+          <p>
+            Complete collection of project pictures across planning,
+            construction, deployment, and execution activities.
+          </p>
+        </div>
+        <div className="photo-gallery-grid">
+          {projectGalleryImages.map((imagePath, index) => (
+            <figure className="gallery-item" key={imagePath}>
+              <img
+                src={`${import.meta.env.BASE_URL}${encodeURI(imagePath)}`}
+                alt={`Project photo ${index + 1}`}
+                loading="lazy"
+              />
+              <figcaption>Project Snapshot {index + 1}</figcaption>
+            </figure>
           ))}
         </div>
       </section>
@@ -479,6 +547,9 @@ function App() {
         </p>
         <div className="cta-actions">
           <a href="mailto:iheanachofederals8@gmail.com">Email for Engagement</a>
+          <a href={whatsappUrl} target="_blank" rel="noreferrer">
+            Chat on WhatsApp
+          </a>
           <a href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/" target="_blank" rel="noreferrer">
             Connect on LinkedIn
           </a>
@@ -499,6 +570,10 @@ function App() {
             <span>Phone</span>
             <strong>+2348093726082</strong>
           </a>
+          <a href={whatsappUrl} target="_blank" rel="noreferrer">
+            <span>WhatsApp</span>
+            <strong>07062733935</strong>
+          </a>
           <a href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/" target="_blank" rel="noreferrer">
             <span>LinkedIn</span>
             <strong>linkedin.com/in/victor-iheanacho-43aa02277</strong>
@@ -514,7 +589,7 @@ function App() {
         </div>
       </section>
 
-      <a className="sticky-cta" href="mailto:iheanachofederals8@gmail.com">
+      <a className="sticky-cta" href={whatsappUrl} target="_blank" rel="noreferrer">
         Start a Project Conversation
       </a>
     </main>
