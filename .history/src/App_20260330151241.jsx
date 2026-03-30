@@ -142,107 +142,36 @@ const featuredProjects = [
   {
     title: 'AKK Fibre Optic Backbone Rollout',
     sector: 'Telecommunications',
-    challenge:
-      'Multi-location rollout with high dependency on civil works, approvals, and testing windows.',
-    action:
-      'Built integrated Primavera P6 schedules, coordinated fibre and civil interfaces, and introduced recovery triggers.',
-    outcome:
-      'Improved milestone delivery by 20% and reduced delay exposure by 20% across active work fronts.',
+    outcome: 'Improved milestone delivery by 20% with integrated schedule controls and recovery planning.',
     image:
       'https://images.unsplash.com/photo-1563770660941-10a636076b4a?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'Lubricant Blending Plant E&I Delivery',
     sector: 'Industrial Engineering',
-    challenge:
-      'Commissioning-critical instrumentation and electrical scope with strict HSE and quality controls.',
-    action:
-      'Implemented baseline monitoring, RCA/FMEA risk workflows, and disciplined weekly variance governance.',
-    outcome:
-      'Maintained 95% schedule adherence and improved commissioning readiness before plant startup.',
+    outcome: 'Maintained 95% schedule adherence through variance analysis, RCA, and FMEA-based risk reduction.',
     image:
       'https://images.unsplash.com/photo-1581092919535-7146ff1a590d?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'Residential Construction Execution',
     sector: 'Construction',
-    challenge:
-      'Sequencing multiple trades across foundation, superstructure, and finishing phases.',
-    action:
-      'Developed detailed WBS sequencing and applied critical path controls with active resource coordination.',
-    outcome:
-      'Delivered full-scope residential build on time while maintaining quality and HSE compliance.',
+    outcome: 'Delivered full-scope residential build on time with disciplined project controls and quality assurance.',
     image:
       'https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80',
   },
   {
     title: 'Quicksilver Digital Transformation Project',
     sector: 'IT & Web Delivery',
-    challenge:
-      'Aligning digital, hardware, and communication infrastructure deliverables in one timeline.',
-    action:
-      'Created integrated WBS dependencies and orchestrated cross-functional delivery checkpoints.',
-    outcome:
-      'Delivered on schedule while protecting scope quality and stakeholder confidence.',
+    outcome: 'Coordinated design, software, and infrastructure teams to deliver on schedule and within scope.',
     image:
       'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-  },
-]
-
-const services = [
-  {
-    title: 'Project Rescue & Recovery',
-    detail:
-      'Stabilize delayed projects through schedule recovery plans, risk triage, and execution reset governance.',
-  },
-  {
-    title: 'Enterprise Scheduling & Controls',
-    detail:
-      'Design baseline schedules, critical path visibility, and progress control systems in Primavera P6 and Microsoft Project.',
-  },
-  {
-    title: 'PMO Reporting & Executive Dashboards',
-    detail:
-      'Translate project complexity into concise executive insight for faster decisions and portfolio alignment.',
-  },
-  {
-    title: 'Multi-Sector Delivery Leadership',
-    detail:
-      'Coordinate teams across telecom, construction, engineering, and IT with high accountability and stakeholder clarity.',
-  },
-]
-
-const processSteps = [
-  {
-    name: '01 Discovery',
-    text: 'Clarify scope, success metrics, constraints, and delivery risk profile.',
-  },
-  {
-    name: '02 Blueprint',
-    text: 'Build schedule architecture, governance cadence, and resource strategy.',
-  },
-  {
-    name: '03 Execution Control',
-    text: 'Track progress vs baseline, resolve blockers quickly, and keep stakeholders aligned.',
-  },
-  {
-    name: '04 Delivery Assurance',
-    text: 'Close out with quality, compliance, and handover discipline.',
   },
 ]
 
 function App() {
   return (
     <main className="site-shell">
-      <nav className="top-nav">
-        <p className="brand">Victor I. PMP</p>
-        <div>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
       <header className="hero">
         <div className="hero-grid">
           <div className="hero-copy">
@@ -251,11 +180,6 @@ function App() {
             <p className="location">
               Abuja, Nigeria | Open to Remote & International Roles
             </p>
-            <p className="value-prop">
-              I help organizations deliver complex projects with stronger
-              schedule certainty, better risk control, and measurable execution
-              performance.
-            </p>
 
             <div className="contact-strip">
               <a href="mailto:iheanachofederals8@gmail.com">
@@ -263,20 +187,14 @@ function App() {
               </a>
               <a href="tel:+2348093726082">+2348093726082</a>
               <a
-                href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/"
+                href="https://linkedin.com/in/victor-Iheanacho"
                 target="_blank"
                 rel="noreferrer"
               >
                 LinkedIn Profile
               </a>
-              <a href="https://x.com/sirfederals" target="_blank" rel="noreferrer">
-                X Profile
-              </a>
               <a className="cv-download" href="/Assets/My%20CV.pdf" download>
                 Download CV
-              </a>
-              <a className="primary-action" href="#contact">
-                Book a Discovery Call
               </a>
             </div>
 
@@ -287,29 +205,16 @@ function App() {
             </ul>
           </div>
 
-          <aside className="hero-visual" aria-label="Project leadership visuals">
+          <aside className="hero-visual">
             <img
-              src="/Assets/Victor%20pix.jpg"
-              alt="Portrait of Iheanacho Victor Ugochukwu"
-            />
-            <img
-              className="hero-secondary"
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80"
-              alt="Project planning dashboard and teamwork"
+              src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=900&q=80"
+              alt="Professional leadership planning session"
             />
             <div className="floating-note">Multi-Sector Delivery Expert</div>
             <div className="floating-note accent">Agile + Waterfall Governance</div>
           </aside>
         </div>
       </header>
-
-      <section className="proof-strip panel" aria-label="Client proof metrics">
-        {trustMetrics.map((metric) => (
-          <article key={metric}>
-            <p>{metric}</p>
-          </article>
-        ))}
-      </section>
 
       <section className="panel">
         <h2>Professional Summary</h2>
@@ -354,25 +259,7 @@ function App() {
         </div>
       </section>
 
-      <section className="panel services-panel" id="services">
-        <div className="section-heading">
-          <h2>How I Support Clients</h2>
-          <p>
-            Built for business owners, operations leaders, and project sponsors
-            who need reliable delivery outcomes.
-          </p>
-        </div>
-        <div className="services-grid">
-          {services.map((service) => (
-            <article className="service-card" key={service.title}>
-              <h3>{service.title}</h3>
-              <p>{service.detail}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="panel gallery-panel" id="projects">
+      <section className="panel gallery-panel">
         <div className="section-heading">
           <h2>Featured Projects</h2>
           <p>
@@ -388,40 +275,14 @@ function App() {
               <div className="project-card-body">
                 <p className="project-sector">{project.sector}</p>
                 <h3>{project.title}</h3>
-                <p>
-                  <strong>Challenge:</strong> {project.challenge}
-                </p>
-                <p>
-                  <strong>Action:</strong> {project.action}
-                </p>
-                <p>
-                  <strong>Outcome:</strong> {project.outcome}
-                </p>
+                <p>{project.outcome}</p>
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="panel process-panel">
-        <div className="section-heading">
-          <h2>My Delivery Process</h2>
-          <p>
-            Structured, transparent, and designed to reduce surprises during
-            execution.
-          </p>
-        </div>
-        <div className="process-grid">
-          {processSteps.map((step) => (
-            <article className="process-card" key={step.name}>
-              <h3>{step.name}</h3>
-              <p>{step.text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="panel" id="experience">
+      <section className="panel">
         <h2>Professional Experience</h2>
         <div className="timeline">
           {experience.map((job) => (
@@ -476,44 +337,11 @@ function App() {
         </p>
         <div className="cta-actions">
           <a href="mailto:iheanachofederals8@gmail.com">Email for Engagement</a>
-          <a href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/" target="_blank" rel="noreferrer">
+          <a href="https://linkedin.com/in/victor-Iheanacho" target="_blank" rel="noreferrer">
             Connect on LinkedIn
           </a>
-          <a href="https://x.com/sirfederals" target="_blank" rel="noreferrer">
-            Follow on X
-          </a>
         </div>
       </section>
-
-      <section className="panel contact-panel" id="contact">
-        <h2>Contact</h2>
-        <div className="contact-cards">
-          <a href="mailto:iheanachofederals8@gmail.com">
-            <span>Email</span>
-            <strong>iheanachofederals8@gmail.com</strong>
-          </a>
-          <a href="tel:+2348093726082">
-            <span>Phone</span>
-            <strong>+2348093726082</strong>
-          </a>
-          <a href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/" target="_blank" rel="noreferrer">
-            <span>LinkedIn</span>
-            <strong>linkedin.com/in/victor-iheanacho-43aa02277</strong>
-          </a>
-          <a href="https://x.com/sirfederals" target="_blank" rel="noreferrer">
-            <span>X</span>
-            <strong>x.com/sirfederals</strong>
-          </a>
-          <a href="/Assets/My%20CV.pdf" download>
-            <span>Curriculum Vitae</span>
-            <strong>Download CV</strong>
-          </a>
-        </div>
-      </section>
-
-      <a className="sticky-cta" href="mailto:iheanachofederals8@gmail.com">
-        Start a Project Conversation
-      </a>
     </main>
   )
 }
