@@ -173,58 +173,40 @@ const impact = [
  */
 const featuredProjects = [
   {
-    title: 'Enterprise Project Structure (EPS) Setup',
-    sector: 'Portfolio Management',
-    success: 'Hierarchical governance · Centralized control enabled',
-    challenge: 'Managing multiple projects (Quicksilver Pro, Construction, TELCO 2026, BTS, Services, Training) under one enterprise portfolio without clear governance structure.',
-    action: 'Created and structured a comprehensive Enterprise Project Structure with high-level projects, assigned strategic priorities (500), project leveling (10), and set Active status with responsible managers.',
-    outcome: 'Established a clear, professional governance framework enabling centralized control, easier reporting, and better resource allocation across all projects—made portfolio scalable for future expansion.',
-    image: 'Assets/TELCO.jpeg',
-  },
-  {
-    title: 'TELCO 2026 – Work Breakdown Structure & Activity Schedule',
+    title: 'AKK Fibre Optic Backbone Rollout',
     sector: 'Telecommunications',
-    success: 'Clear phased roadmap · Realistic timelines established',
-    challenge: 'Complex telecom project requiring detailed breakdown of 4 major phases (Concept/Feasibility, Requirement, Decision, Deployment) with multiple dependencies and integrated scheduling.',
-    action: 'Built complete WBS for TELCO 2026 with 4 major phases, created detailed activities (IDs: A1000, A1010, etc.) with durations, start/finish dates (Feb–Apr 2026), budgeted costs, and activity relationships.',
-    outcome: 'Delivered clear phased roadmap with realistic timelines, improved deliverable tracking, reduced team ambiguity—stakeholders had complete visibility into project milestones and activities.',
-    image: 'Assets/Image 2: TELCO 2026 – Detailed Activity Schedule.jpeg',
+    success: '20% milestone improvement · 15% idle time cut',
+    challenge: 'Multi-location rollout with high dependency on civil works, approvals, and testing windows.',
+    action: 'Built integrated Primavera P6 schedules, coordinated fibre and civil interfaces, and introduced recovery triggers.',
+    outcome: 'Improved milestone delivery by 20%; reduced delay exposure by 20% across active work fronts.',
+    image: 'Projects/Building schedule.png',
   },
   {
-    title: 'BS 2026 – Building Schedule Activity List & Cost Planning',
+    title: 'Lubricant Blending Plant E&I Delivery',
+    sector: 'Industrial Engineering',
+    success: '95% schedule adherence · Zero commissioning delays',
+    challenge: 'Commissioning-critical instrumentation and electrical scope with strict HSE and quality controls.',
+    action: 'Implemented baseline monitoring, RCA/FMEA risk workflows, and disciplined weekly variance governance.',
+    outcome: 'Maintained 95% schedule adherence and improved commissioning readiness before plant startup.',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.22.53 PM.jpeg',
+  },
+  {
+    title: 'Residential Construction Execution',
     sector: 'Construction',
-    success: '₦114M+ budget tracked · Accurate cost estimation achieved',
-    challenge: 'Construction project spanning 3 phases (Foundation, Super Structure, Finishing) with detailed activity-level costing for materials, labor, and procurement planning across multiple trades.',
-    action: 'Developed full activity list with 3 main phases, detailed every task (Clearing, Digging, Block work, Plastering, Plumbing, Electricals, Painting, etc.), assigned durations, dates, and budgeted costs in Naira at activity level.',
-    outcome: 'Enabled accurate cost estimation over ₦114M, improved procurement planning, minimized cost overrun risk—management had real-time budget visibility and cash flow projections.',
-    image: 'Assets/Image 3: BS 2026 Building Schedule – Activity List & Costs.jpeg',
+    success: 'On-time delivery · Full HSE compliance achieved',
+    challenge: 'Sequencing multiple trades across foundation, superstructure, and finishing phases.',
+    action: 'Developed detailed WBS sequencing and applied critical path controls with active resource coordination.',
+    outcome: 'Delivered full-scope residential build on time while maintaining quality and HSE compliance.',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.38.12 PM.jpeg',
   },
   {
-    title: 'BS 2026 – Gantt Chart & Construction Timeline',
-    sector: 'Construction',
-    success: 'Visual clarity achieved · Critical path identified',
-    challenge: 'Communicating complex multi-trade construction sequence to site teams and management without clear visual dependencies and critical path visibility.',
-    action: 'Created comprehensive Gantt Chart mapping all activities with bars showing start/finish dates, task dependencies (Finish-to-Start), critical path, and full sequence from Clearing → Foundation → Super Structure → Finishing.',
-    outcome: 'Made construction timeline easy to understand at a glance, helped identify potential delays early through dependency visibility, improved coordination between trades (bricklayers, plumbers, electricians).',
-    image: 'Assets/Image 4: BS 2026 – Gantt Chart (Construction Timeline).jpeg',
-  },
-  {
-    title: 'Comprehensive Project Resource Registry',
-    sector: 'Project Controls',
-    success: 'Resource overallocation prevented · Full allocation visibility',
-    challenge: 'Managing diverse resources (Labor: Victor A, Carpenters, Bricklayers, Plumbers, Electricians, Site Supervisors; Equipment: Excavator, Crane, Mixer; Materials: Cement, Bricks, Iron Rods, Granite, Pipes) across projects.',
-    action: 'Built comprehensive Resource Dictionary with complete resource catalog, assigned units, roles, and default allocation units (8 hours/day), created resource allocation matrix for all projects.',
-    outcome: 'Prevented resource overallocation and shortages, facilitated accurate resource planning and costing, ensured right people and materials available when needed—smooth execution achieved.',
-    image: 'Assets/Image 5: Project Resources RegisterAll that was done:.jpeg',
-  },
-  {
-    title: 'TELCO 2026 – Gantt Chart & Project Timeline',
-    sector: 'Telecommunications',
-    success: 'Project duration clarity · Dependency transparency',
-    challenge: 'Providing stakeholders with clear visual roadmap of all TELCO 2026 phases, dependencies, and critical path from project start (Feb 9) to deployment end (Apr 14, 2026).',
-    action: 'Produced detailed Gantt Chart visualizing all phases and activities with dependencies, critical path highlighting, and overall project duration clearly mapped for stakeholder communication.',
-    outcome: 'Provided clear visual project roadmap to stakeholders, improved progress monitoring against planned dates, supported better decision-making during project lifecycle—improved stakeholder confidence.',
-    image: 'Assets/Image 6: TELCO 2026 – Gantt Chart (Telecom Timeline).jpeg',
+    title: 'Quicksilver Digital Transformation',
+    sector: 'IT & Web Delivery',
+    success: 'Full scope delivered on schedule · Stakeholder sign-off',
+    challenge: 'Aligning digital, hardware, and communication infrastructure deliverables in one timeline.',
+    action: 'Created integrated WBS dependencies and orchestrated cross-functional delivery checkpoints.',
+    outcome: 'Delivered on schedule while protecting scope quality and stakeholder confidence.',
+    image: 'Projects/WhatsApp Image 2026-03-30 at 3.40.47 PM.jpeg',
   },
 ]
 
@@ -478,7 +460,6 @@ export default function App() {
           ═══════════════════════════════════════════════════════════ */}
       <div className="proof-strip">
         <div className="proof-grid">
-          {/* Render proof metrics dynamically - Each metric displays a number and description */}
           {proofMetrics.map((m) => (
             <div className="proof-card reveal" key={m.num}>
               <p className="proof-num">{m.num}</p>
@@ -488,23 +469,14 @@ export default function App() {
         </div>
       </div>
 
-      {/* ═══════════════════════════════════════════════════════════
-          PROFESSIONAL SUMMARY & COMPETENCIES - Expertise overview
-          Comprehensive summary, core competencies, and technical tools
-          ═══════════════════════════════════════════════════════════ */}
+      {/* ── Summary & Competencies ─────────────────────────────── */}
       <section className="panel" aria-labelledby="summary-title">
         <div className="summary-panel">
-          {/* LEFT: Main professional summary text */}
           <div className="summary-text reveal">
-            {/* Section label for visual hierarchy */}
             <p className="section-label">Professional Summary</p>
-            
-            {/* Main section heading */}
             <h2 className="section-title" id="summary-title">
               Driving Delivery Excellence Across Complex Programmes
             </h2>
-            
-            {/* First paragraph: Background and credentials */}
             <p>
               Project Management Professional (PMP) with extensive experience leading
               complex, multi-sector projects across Engineering, Construction, IT,
@@ -512,8 +484,6 @@ export default function App() {
               strategic planning, enterprise scheduling, cost governance, and risk management
               using Microsoft Project, Primavera P6, and Click Up.
             </p>
-            
-            {/* Second paragraph: Proven capabilities and methodologies */}
             <p>
               Proven ability to lead cross-functional and geographically distributed teams,
               strengthen governance frameworks, and implement structured methodologies across
@@ -523,7 +493,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* RIGHT: Two-column aside with competencies and technical expertise */}
           <div className="summary-aside">
             <div className="reveal reveal-delay-1">
               <p className="section-label">Core Competencies</p>
@@ -621,12 +590,8 @@ export default function App() {
 
       <hr className="divider" />
 
-      {/* ══════════════════════════════════════════════════════════════════
-          DELIVERY PROCESS SECTION - 4-Phase methodology overview
-          Shows the structured approach to project delivery
-          ══════════════════════════════════════════════════════════════════ */}
+      {/* ── Process ────────────────────────────────────────────── */}
       <section className="panel" aria-labelledby="process-title">
-        {/* Centered section header */}
         <div className="reveal" style={{ textAlign: 'center' }}>
           <p className="section-label" style={{ justifyContent: 'center' }}>My Delivery Process</p>
           <h2 className="section-title" id="process-title" style={{ textAlign: 'center' }}>Structured. Transparent. Predictable.</h2>
@@ -721,32 +686,21 @@ export default function App() {
 
       {/* ── CTA ────────────────────────────────────────────────── */}
       <section className="cta-panel reveal" aria-labelledby="cta-title">
-        {/* CTA section label */}
         <p className="section-label" style={{ justifyContent: 'center' }}>Work With Me</p>
-        {/* CTA headline */}
         <h2 id="cta-title">Let's Build Your Next Successful Project</h2>
-        {/* CTA supporting copy */}
         <p>
           Available for project management leadership, scheduling strategy, PMO governance,
           and turnaround support for complex delivery programmes.
         </p>
-        {/* CTA action buttons - Multiple contact/engagement options */}
         <div className="cta-actions">
-          {/* Primary CTA: WhatsApp for quick chat */}
           <a href={waUrl} target="_blank" rel="noreferrer" className="cta-primary">Chat on WhatsApp</a>
-          {/* Email for formal engagement */}
           <a href="mailto:iheanachofederals8@gmail.com">Email for Engagement</a>
-          {/* Professional network link */}
           <a href="https://www.linkedin.com/in/victor-iheanacho-43aa02277/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
-          {/* Social follow */}
           <a href="https://x.com/sirfederals" target="_blank" rel="noreferrer">Follow on X</a>
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════════
-          CONTACT SECTION - Comprehensive contact information
-          All contact methods in a scannable contact card layout
-          ═══════════════════════════════════════════════════════════ */}
+      {/* ── Contact ────────────────────────────────────────────── */}
       <section className="panel" id="contact" aria-labelledby="contact-title">
         <div className="reveal">
           <p className="section-label">Get in Touch</p>
@@ -776,17 +730,10 @@ export default function App() {
         </div>
       </section>
 
-      {/* ══════════════════════════════════════════════════════════════════
-          FOOTER - Copyright and site tagline
-          ══════════════════════════════════════════════════════════════════ */}
+      {/* ── Footer ─────────────────────────────────────────────── */}
       <footer>
         <p>© {new Date().getFullYear()} Iheanacho Victor Ugochukwu, PMP · Abuja, Nigeria</p>
         <p>Built for impact — delivered with precision.</p>
-        <p style={{ marginTop: '1rem', fontSize: '0.9rem', opacity: 0.85 }}>
-          Built by <strong>Alphonsus</strong> · 
-          <a href="tel:+2348033670770" style={{ marginLeft: '0.5rem' }}>+234 803 367 0770</a> · 
-          <a href="mailto:ashamsmart1@gmail.com" style={{ marginLeft: '0.5rem' }}>ashamsmart1@gmail.com</a>
-        </p>
       </footer>
 
       {/* ── Sticky CTA ─────────────────────────────────────────── */}

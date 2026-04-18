@@ -179,7 +179,7 @@ const featuredProjects = [
     challenge: 'Managing multiple projects (Quicksilver Pro, Construction, TELCO 2026, BTS, Services, Training) under one enterprise portfolio without clear governance structure.',
     action: 'Created and structured a comprehensive Enterprise Project Structure with high-level projects, assigned strategic priorities (500), project leveling (10), and set Active status with responsible managers.',
     outcome: 'Established a clear, professional governance framework enabling centralized control, easier reporting, and better resource allocation across all projects—made portfolio scalable for future expansion.',
-    image: 'Assets/TELCO.jpeg',
+    image: 'Projects/TELCO.jpeg',
   },
   {
     title: 'TELCO 2026 – Work Breakdown Structure & Activity Schedule',
@@ -188,7 +188,7 @@ const featuredProjects = [
     challenge: 'Complex telecom project requiring detailed breakdown of 4 major phases (Concept/Feasibility, Requirement, Decision, Deployment) with multiple dependencies and integrated scheduling.',
     action: 'Built complete WBS for TELCO 2026 with 4 major phases, created detailed activities (IDs: A1000, A1010, etc.) with durations, start/finish dates (Feb–Apr 2026), budgeted costs, and activity relationships.',
     outcome: 'Delivered clear phased roadmap with realistic timelines, improved deliverable tracking, reduced team ambiguity—stakeholders had complete visibility into project milestones and activities.',
-    image: 'Assets/Image 2: TELCO 2026 – Detailed Activity Schedule.jpeg',
+    image: 'Projects/TELCO 2026 – Detailed Activity Schedule.jpeg',
   },
   {
     title: 'BS 2026 – Building Schedule Activity List & Cost Planning',
@@ -197,7 +197,7 @@ const featuredProjects = [
     challenge: 'Construction project spanning 3 phases (Foundation, Super Structure, Finishing) with detailed activity-level costing for materials, labor, and procurement planning across multiple trades.',
     action: 'Developed full activity list with 3 main phases, detailed every task (Clearing, Digging, Block work, Plastering, Plumbing, Electricals, Painting, etc.), assigned durations, dates, and budgeted costs in Naira at activity level.',
     outcome: 'Enabled accurate cost estimation over ₦114M, improved procurement planning, minimized cost overrun risk—management had real-time budget visibility and cash flow projections.',
-    image: 'Assets/Image 3: BS 2026 Building Schedule – Activity List & Costs.jpeg',
+    image: 'Projects/BS 2026 Building Schedule – Activity List & Costs.jpeg',
   },
   {
     title: 'BS 2026 – Gantt Chart & Construction Timeline',
@@ -206,7 +206,7 @@ const featuredProjects = [
     challenge: 'Communicating complex multi-trade construction sequence to site teams and management without clear visual dependencies and critical path visibility.',
     action: 'Created comprehensive Gantt Chart mapping all activities with bars showing start/finish dates, task dependencies (Finish-to-Start), critical path, and full sequence from Clearing → Foundation → Super Structure → Finishing.',
     outcome: 'Made construction timeline easy to understand at a glance, helped identify potential delays early through dependency visibility, improved coordination between trades (bricklayers, plumbers, electricians).',
-    image: 'Assets/Image 4: BS 2026 – Gantt Chart (Construction Timeline).jpeg',
+    image: 'Projects/BS 2026 – Gantt Chart (Construction Timeline).jpeg',
   },
   {
     title: 'Comprehensive Project Resource Registry',
@@ -215,7 +215,7 @@ const featuredProjects = [
     challenge: 'Managing diverse resources (Labor: Victor A, Carpenters, Bricklayers, Plumbers, Electricians, Site Supervisors; Equipment: Excavator, Crane, Mixer; Materials: Cement, Bricks, Iron Rods, Granite, Pipes) across projects.',
     action: 'Built comprehensive Resource Dictionary with complete resource catalog, assigned units, roles, and default allocation units (8 hours/day), created resource allocation matrix for all projects.',
     outcome: 'Prevented resource overallocation and shortages, facilitated accurate resource planning and costing, ensured right people and materials available when needed—smooth execution achieved.',
-    image: 'Assets/Image 5: Project Resources RegisterAll that was done:.jpeg',
+    image: 'Projects/Project Resources Register.jpeg',
   },
   {
     title: 'TELCO 2026 – Gantt Chart & Project Timeline',
@@ -224,7 +224,7 @@ const featuredProjects = [
     challenge: 'Providing stakeholders with clear visual roadmap of all TELCO 2026 phases, dependencies, and critical path from project start (Feb 9) to deployment end (Apr 14, 2026).',
     action: 'Produced detailed Gantt Chart visualizing all phases and activities with dependencies, critical path highlighting, and overall project duration clearly mapped for stakeholder communication.',
     outcome: 'Provided clear visual project roadmap to stakeholders, improved progress monitoring against planned dates, supported better decision-making during project lifecycle—improved stakeholder confidence.',
-    image: 'Assets/Image 6: TELCO 2026 – Gantt Chart (Telecom Timeline).jpeg',
+    image: 'Projects/TELCO 2026 – Gantt Chart (Telecom Timeline).jpeg',
   },
 ]
 
