@@ -18,12 +18,17 @@ import './App.css'
  * and tools used across various industries and delivery models
  */
 const coreCompetencies = [
-  { title: 'Project Scheduling & Delivery', detail: 'Primavera P6 · MS Project · ClickUp' },
-  { title: 'Remote Team Coordination & Stakeholder Reporting', detail: 'Clear updates, no surprises' },
-  { title: 'Operations Organisation & Implementation', detail: 'Structure for growing teams' },
-  { title: 'Cost Tracking & Budget Management', detail: 'From activity-level to portfolio' },
-  { title: 'Risk Identification & Recovery Planning', detail: 'Proactive, not reactive' },
-  { title: 'PMO Setup & Executive Dashboarding', detail: 'Structure built to scale' },
+  'Project & Program Lifecycle Leadership',
+  'Strategic Planning & Execution Alignment',
+  'Enterprise Scheduling & Baseline Governance',
+  'Project Controls & Cost Management',
+  'Construction & EPC Project Coordination',
+  'IT & Digital Transformation Delivery',
+  'Risk Management & Mitigation Strategy',
+  'PMO Governance & Executive Dashboarding',
+  'Vendor, Contract & Stakeholder Management',
+  'Resource Planning & Portfolio Optimization',
+  'Primavera P6 · MS Project · Click Up',
 ]
 
 /**
@@ -43,9 +48,9 @@ const technicalExpertise = [
  */
 const proofMetrics = [
   { num: '20%',   desc: 'Milestone delivery improvement in fibre rollout' },
-  { num: '15%',   desc: 'Crew idle time reduction through resource forecasting' },
   { num: '95%',   desc: 'Schedule adherence on E&I commissioning' },
-  { num: 'NGN 8B+', desc: 'Portfolio value structured with executive dashboards' },
+  { num: '30%',   desc: 'Operational efficiency uplift in IT systems' },
+  { num: '6+',    desc: 'Industries delivered across Nigeria' },
 ]
 
 /**
@@ -168,70 +173,58 @@ const impact = [
  */
 const featuredProjects = [
   {
-    title: 'AKK Gas Pipeline Fibre Optic Backbone',
-    client: 'Kennyworks Limited (Sicilsado Group)',
-    period: 'Feb 2025 - Jan 2026',
-    sector: 'Telecommunications',
-    stats: ['20% faster milestones', '15% less idle time', 'Multi-site rollout'],
-    challenge: 'A large-scale fibre optic deployment across multiple locations, with concurrent civil works, installation, splicing, testing, and network integration - all with tight milestone deadlines and no existing delivery structure.',
-    solution: 'Developed an integrated Primavera P6 schedule across all workstreams. Implemented schedule risk analysis and recovery planning, coordinated multi-disciplinary crews, and established resource forecasting to monitor productivity.',
-    outcome: 'On-time milestone delivery improved by 20%. Crew idle time reduced by 15%. All commissioning, testing, and handover completed in full compliance with regulatory and HSE standards.',
-    image: 'Projects/Telecom Project.jpeg',
-  },
-  {
-    title: 'Lubricant Oil Blending Plant E&I Commissioning',
-    client: 'A.A. Rano Nigeria Limited, Kano',
-    period: 'Sep 2024 - Jan 2025',
-    sector: 'Engineering & Commissioning',
-    stats: ['95% schedule adherence', 'Zero missed milestones', 'On-time plant start-up'],
-    challenge: 'Electrical and instrumentation works inside an active industrial facility - any delay risked pushing back the entire plant start-up, with significant financial consequences.',
-    solution: 'Built a detailed project schedule with daily variance tracking. Conducted RCA and FMEA to identify and resolve issues before escalation. Managed cost and material control throughout to keep procurement aligned.',
-    outcome: '95% schedule adherence maintained throughout. All pre-commissioning and commissioning milestones met ahead of plant start-up. Full HSE, quality, and scope compliance achieved.',
-    image: 'Projects/E&I Project.jpeg',
-  },
-  {
-    title: 'BS 2026 Construction & TELCO 2026 Portfolio',
-    client: 'Quicksilver Project',
-    period: 'February 2026 - Present',
+    title: 'Enterprise Project Structure (EPS) Setup',
     sector: 'Portfolio Management',
-    stats: ['NGN 8B+ portfolio value', '2 concurrent projects', 'Executive-ready dashboards'],
-    challenge: 'Two major concurrent projects - large-scale construction and a telecom deployment - required unified scheduling, cost visibility, and clear executive reporting across a single portfolio.',
-    solution: 'Structured the full EPS in Primavera P6, built complete WBS and Gantt charts for both projects, created a comprehensive Resource Register, and assigned budgeted costs at activity level.',
-    outcome: 'Executive dashboards delivered that improved stakeholder decision-making. Precise cost tracking and cash-flow management enabled across a portfolio exceeding NGN 8 billion in value.',
-    image: 'Assets/Image 3: BS 2026 Building Schedule – Activity List & Costs.jpeg',
-  },
-  {
-    title: 'Residential Construction Project',
-    client: 'KSD Multicorp',
-    period: '2023',
-    sector: 'Construction',
-    stats: ['NGN 4.6B project', '8 months on schedule', 'Delivered on budget'],
-    challenge: 'A NGN 4.6 billion residential construction project requiring end-to-end management across all phases - from foundation through finishing - with multiple contractors, a tight timeline, and no delays tolerated.',
-    solution: 'Developed and maintained a detailed WBS and integrated project schedule. Applied critical path analysis and baseline management to identify and resolve schedule risks early. Coordinated multi-disciplinary teams, contractors, and vendors to optimise resource allocation.',
-    outcome: 'Delivered the full project within the 8-month schedule and within budget. High standards of workmanship maintained throughout with full stakeholder satisfaction.',
-    image: 'Projects/Building Project.png',
-  },
-  {
-    title: 'Digital Platform Launch',
-    client: 'KSD Multicorp',
-    period: 'Jul 2023 - Aug 2024',
-    sector: 'Digital Implementation',
-    stats: ['6 months on schedule', '4 teams coordinated', 'On-time launch'],
-    challenge: 'A multi-workstream digital project with no existing delivery framework - covering web design, hardware setup, software development, and network infrastructure - all running concurrently with a fixed launch deadline.',
-    solution: 'Implemented end-to-end project planning in MS Project and Primavera P6: WBS, task sequencing, dependencies, milestones, and baseline management. Coordinated cross-functional teams across all four workstreams throughout the 6-month delivery period.',
-    outcome: 'Platform successfully launched on time within the 6-month schedule, within scope, and to full stakeholder satisfaction.',
+    success: 'Hierarchical governance · Centralized control enabled',
+    challenge: 'Managing multiple projects (Quicksilver Pro, Construction, TELCO 2026, BTS, Services, Training) under one enterprise portfolio without clear governance structure.',
+    action: 'Created and structured a comprehensive Enterprise Project Structure with high-level projects, assigned strategic priorities (500), project leveling (10), and set Active status with responsible managers.',
+    outcome: 'Established a clear, professional governance framework enabling centralized control, easier reporting, and better resource allocation across all projects—made portfolio scalable for future expansion.',
     image: 'Assets/TELCO.jpeg',
   },
   {
-    title: 'Concurrent Furniture Production & Installation',
-    client: 'Kennyworks Limited',
-    period: '2022',
-    sector: 'Operations Delivery',
-    stats: ['3 projects simultaneously', 'All delivered on time', 'Zero scope overruns'],
-    challenge: 'Managing 3 concurrent residential and commercial furniture projects - each requiring separate fabrication, procurement, logistics, and on-site installation coordination - without dropping quality or missing deadlines on any.',
-    solution: 'Built individual project schedules for all 3 engagements, implemented structured procurement planning and inventory tracking across each, and coordinated carpenters, vendors, and logistics teams simultaneously.',
-    outcome: 'All 3 projects delivered on time and within scope. Material wastage reduced through structured procurement tracking. Client satisfaction maintained across all engagements through milestone-based reporting.',
-    image: 'Projects/WhatsApp Image 2026-03-30 at 3.38.22 PM.jpe',
+    title: 'TELCO 2026 – Work Breakdown Structure & Activity Schedule',
+    sector: 'Telecommunications',
+    success: 'Clear phased roadmap · Realistic timelines established',
+    challenge: 'Complex telecom project requiring detailed breakdown of 4 major phases (Concept/Feasibility, Requirement, Decision, Deployment) with multiple dependencies and integrated scheduling.',
+    action: 'Built complete WBS for TELCO 2026 with 4 major phases, created detailed activities (IDs: A1000, A1010, etc.) with durations, start/finish dates (Feb–Apr 2026), budgeted costs, and activity relationships.',
+    outcome: 'Delivered clear phased roadmap with realistic timelines, improved deliverable tracking, reduced team ambiguity—stakeholders had complete visibility into project milestones and activities.',
+    image: 'Assets/Image 2: TELCO 2026 – Detailed Activity Schedule.jpeg',
+  },
+  {
+    title: 'BS 2026 – Building Schedule Activity List & Cost Planning',
+    sector: 'Construction',
+    success: '₦114M+ budget tracked · Accurate cost estimation achieved',
+    challenge: 'Construction project spanning 3 phases (Foundation, Super Structure, Finishing) with detailed activity-level costing for materials, labor, and procurement planning across multiple trades.',
+    action: 'Developed full activity list with 3 main phases, detailed every task (Clearing, Digging, Block work, Plastering, Plumbing, Electricals, Painting, etc.), assigned durations, dates, and budgeted costs in Naira at activity level.',
+    outcome: 'Enabled accurate cost estimation over ₦114M, improved procurement planning, minimized cost overrun risk—management had real-time budget visibility and cash flow projections.',
+    image: 'Assets/Image 3: BS 2026 Building Schedule – Activity List & Costs.jpeg',
+  },
+  {
+    title: 'BS 2026 – Gantt Chart & Construction Timeline',
+    sector: 'Construction',
+    success: 'Visual clarity achieved · Critical path identified',
+    challenge: 'Communicating complex multi-trade construction sequence to site teams and management without clear visual dependencies and critical path visibility.',
+    action: 'Created comprehensive Gantt Chart mapping all activities with bars showing start/finish dates, task dependencies (Finish-to-Start), critical path, and full sequence from Clearing → Foundation → Super Structure → Finishing.',
+    outcome: 'Made construction timeline easy to understand at a glance, helped identify potential delays early through dependency visibility, improved coordination between trades (bricklayers, plumbers, electricians).',
+    image: 'Assets/Image 4: BS 2026 – Gantt Chart (Construction Timeline).jpeg',
+  },
+  {
+    title: 'Comprehensive Project Resource Registry',
+    sector: 'Project Controls',
+    success: 'Resource overallocation prevented · Full allocation visibility',
+    challenge: 'Managing diverse resources (Labor: Victor A, Carpenters, Bricklayers, Plumbers, Electricians, Site Supervisors; Equipment: Excavator, Crane, Mixer; Materials: Cement, Bricks, Iron Rods, Granite, Pipes) across projects.',
+    action: 'Built comprehensive Resource Dictionary with complete resource catalog, assigned units, roles, and default allocation units (8 hours/day), created resource allocation matrix for all projects.',
+    outcome: 'Prevented resource overallocation and shortages, facilitated accurate resource planning and costing, ensured right people and materials available when needed—smooth execution achieved.',
+    image: 'Assets/Image 5: Project Resources RegisterAll that was done:.jpeg',
+  },
+  {
+    title: 'TELCO 2026 – Gantt Chart & Project Timeline',
+    sector: 'Telecommunications',
+    success: 'Project duration clarity · Dependency transparency',
+    challenge: 'Providing stakeholders with clear visual roadmap of all TELCO 2026 phases, dependencies, and critical path from project start (Feb 9) to deployment end (Apr 14, 2026).',
+    action: 'Produced detailed Gantt Chart visualizing all phases and activities with dependencies, critical path highlighting, and overall project duration clearly mapped for stakeholder communication.',
+    outcome: 'Provided clear visual project roadmap to stakeholders, improved progress monitoring against planned dates, supported better decision-making during project lifecycle—improved stakeholder confidence.',
+    image: 'Assets/Image 6: TELCO 2026 – Gantt Chart (Telecom Timeline).jpeg',
   },
 ]
 
@@ -241,24 +234,21 @@ const featuredProjects = [
  */
 const services = [
   {
-    title: 'Project Coordination & Execution',
-    detail: 'End-to-end project oversight - scheduling, team coordination, progress tracking, and stakeholder reporting. I manage the moving parts so your team can focus on delivery.',
+    title: 'Project Rescue & Recovery',
+    detail: 'Stabilise delayed projects through schedule recovery plans, risk triage, and execution reset governance.',
   },
   {
-    title: 'Process & Workflow Setup',
-    detail: 'For growing teams that have outgrown informal coordination. I map your processes, build tracking frameworks, and set up the systems that keep operations running smoothly as you scale.',
+    title: 'Enterprise Scheduling & Controls',
+    detail: 'Design baseline schedules, critical path visibility, and progress control systems in Primavera P6 and MS Project.',
   },
   {
-    title: 'Implementation Support',
-    detail: 'Launching a new tool, system, or operational process? I plan the rollout, coordinate the teams, manage the risks, and make sure it goes live on time and without confusion.',
+    title: 'PMO Reporting & Executive Dashboards',
+    detail: 'Translate project complexity into concise executive insight for faster decisions and portfolio alignment.',
   },
-]
-
-const clientSignals = [
-  'Growing quickly and adding projects faster than your process can handle',
-  'No formal project structure or dedicated PM function',
-  'Remote or distributed teams needing clear coordination and reporting',
-  'Businesses launching new systems, tools, or operational processes',
+  {
+    title: 'Multi-Sector Delivery Leadership',
+    detail: 'Coordinate teams across telecom, construction, engineering, and IT with high accountability and stakeholder clarity.',
+  },
 ]
 
 /**
@@ -392,9 +382,7 @@ export default function App() {
   const base      = import.meta.env.BASE_URL              // Vite base URL for assets
   const cvUrl     = `${base}Assets/My%20CV.pdf`           // Link to downloadable CV
   const photoUrl  = `${base}Assets/Victor%20pix.jpg`      // Profile photo for hero section
-  const pmpBadgeUrl = `${base}Assets/pmp-badge.svg`       // PMP badge displayed in hero credentials
   const waUrl     = 'https://wa.me/2347062733935?text=Hello%20Victor%2C%20I%20would%20like%20to%20discuss%20a%20project.' // WhatsApp contact link
-  const credlyUrl  = 'https://www.credly.com/'             // Replace with the verified PMP badge URL when available
 
   return (
     <main>
@@ -407,7 +395,6 @@ export default function App() {
         
         {/* Primary navigation - Main sections and quick CTA */}
         <nav aria-label="Primary navigation">
-          <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
@@ -426,11 +413,11 @@ export default function App() {
           {/* LEFT: Copy - Introduction, headline, and calls-to-action */}
           <div className="hero-copy">
             {/* Professional subtitle */}
-            <p className="hero-eyebrow reveal">Iheanacho Victor Ugochukwu, PMP</p>
+            <p className="hero-eyebrow reveal">Project Management Professional</p>
 
             {/* Main headline with name and staggered reveal animation */}
             <h1 className="hero-name reveal reveal-delay-1" id="hero-name">
-              I Help Organisations Implement Systems, Improve Processes, and Deliver Projects <em>Without Delays or Confusion.</em>
+              Iheanacho<br /><em>Victor</em> Ugochukwu
             </h1>
 
             {/* Location and availability info */}
@@ -440,15 +427,9 @@ export default function App() {
 
             {/* Value proposition - Core benefit statement */}
             <p className="hero-value reveal reveal-delay-2">
-              Operations &amp; Implementation Project Manager (PMP) - structured,
-              results-driven, and easy to work with. Available for remote engagements.
+              I help organisations deliver complex projects with stronger schedule
+              certainty, better risk control, and measurable execution performance.
             </p>
-
-            <a className="pmp-credential reveal reveal-delay-3" href={credlyUrl} target="_blank" rel="noreferrer">
-              <img src={pmpBadgeUrl} alt="Project Management Professional PMP badge" />
-              <strong>Project Management Professional (PMP)®</strong>
-              <small>Issued by the Project Management Institute (PMI)</small>
-            </a>
 
             {/* Multi-channel contact options and primary CTAs */}
             <div className="contact-strip reveal reveal-delay-3">
@@ -461,7 +442,7 @@ export default function App() {
               
               {/* Action buttons */}
               <a href={cvUrl} download className="btn-dl">Download CV</a>
-              <a href="#contact" className="btn-primary">Let's Talk - Book a Free 30-Minute Call</a>
+              <a href="#contact" className="btn-primary">Book a Discovery Call</a>
             </div>
 
             {/* Key achievements - Quick proof points */}
@@ -469,8 +450,9 @@ export default function App() {
               <li>20% better milestone delivery</li>
               <li>95% schedule adherence</li>
               <li>30% efficiency uplift</li>
+              <li>6+ industries delivered</li>
               <li>15% crew idle time reduced</li>
-              <li>Executive dashboards delivered</li>
+              <li>End-to-end PMO governance</li>
             </ul>
           </div>
 
@@ -480,8 +462,8 @@ export default function App() {
             <div className="profile-wrap reveal reveal-delay-2">
               <img className="profile-static" src={photoUrl} alt="Portrait of Iheanacho Victor Ugochukwu, PMP" />
               {/* Floating credentials badges */}
-              <div className="floating-badge b1">PMP Certified</div>
-              <div className="floating-badge b2">Implementation & Operations PM</div>
+              <div className="floating-badge b1">Multi-Sector Delivery Expert</div>
+              <div className="floating-badge b2">Structured Delivery Governance</div>
             </div>
           </aside>
         </div>
@@ -519,20 +501,25 @@ export default function App() {
             
             {/* Main section heading */}
             <h2 className="section-title" id="summary-title">
-              Structure for Teams That Need Delivery Clarity
+              Driving Delivery Excellence Across Complex Programmes
             </h2>
             
             {/* First paragraph: Background and credentials */}
             <p>
-              I help organisations implement structured processes, coordinate complex
-              projects, and deliver results without delays or confusion.
+              Project Management Professional (PMP) with extensive experience leading
+              complex, multi-sector projects across Engineering, Construction, IT,
+              Furniture Manufacturing, and Retail Operations. Demonstrated expertise in
+              strategic planning, enterprise scheduling, cost governance, and risk management
+              using Microsoft Project, Primavera P6, and Click Up.
             </p>
             
             {/* Second paragraph: Proven capabilities and methodologies */}
             <p>
-              Whether a company is scaling quickly, launching a new system, or struggling to
-              keep delivery on track - I step in, build the framework, and get things moving.
-              Reliable, structured, and easy to work with. Available for remote engagements.
+              Proven ability to lead cross-functional and geographically distributed teams,
+              strengthen governance frameworks, and implement structured methodologies across
+              Agile and Waterfall environments — building scalable project controls systems,
+              improving schedule predictability, and delivering measurable gains in cost efficiency
+              and organisational performance.
             </p>
           </div>
 
@@ -541,12 +528,7 @@ export default function App() {
             <div className="reveal reveal-delay-1">
               <p className="section-label">Core Competencies</p>
               <ul className="competency-chips">
-                {coreCompetencies.map((c) => (
-                  <li key={c.title}>
-                    <strong>{c.title}</strong>
-                    <span>{c.detail}</span>
-                  </li>
-                ))}
+                {coreCompetencies.map((c) => <li key={c}>{c}</li>)}
               </ul>
             </div>
 
@@ -572,10 +554,10 @@ export default function App() {
         <section className="panel" id="services" aria-labelledby="services-title">
           <div className="reveal">
             <p className="section-label">How I Support Clients</p>
-            <h2 className="section-title" id="services-title">Services</h2>
+            <h2 className="section-title" id="services-title">Built for Reliable Delivery Outcomes</h2>
             <p className="section-sub">
-              Clear ways to bring structure, coordination, and implementation support into
-              your team without the overhead of a full in-house PMO.
+              For business owners, operations leaders, and project sponsors who need
+              execution certainty — not just plans.
             </p>
           </div>
 
@@ -585,7 +567,6 @@ export default function App() {
                 <p className="service-num">0{i + 1}</p>
                 <h3>{s.title}</h3>
                 <p>{s.detail}</p>
-                <a href="#contact" className="service-cta">Get in touch today</a>
               </article>
             ))}
           </div>
@@ -596,10 +577,9 @@ export default function App() {
       <section className="panel" id="projects" aria-labelledby="projects-title">
         <div className="reveal">
           <p className="section-label">Featured Projects</p>
-          <h2 className="section-title" id="projects-title">Case Studies</h2>
+          <h2 className="section-title" id="projects-title">Delivery Snapshots</h2>
           <p className="section-sub">
-            Proof of structured delivery across implementation, operations, construction,
-            telecom, and digital workstreams.
+            Selected highlights across telecom, engineering, construction, and digital transformation.
           </p>
         </div>
 
@@ -619,18 +599,15 @@ export default function App() {
                 <span className="project-sector-tag">{p.sector}</span>
               </div>
               <div className="project-card-body">
-                <p className="project-client">{p.client} · {p.period}</p>
                 <h3>{p.title}</h3>
-                <ul className="project-stats">
-                  {p.stats.map((stat) => <li key={stat}>{stat}</li>)}
-                </ul>
+                <p className="project-success">★ {p.success}</p>
                 <p className="project-meta">
                   <strong>Challenge</strong>
                   {p.challenge}
                 </p>
                 <p className="project-meta">
-                  <strong>Solution</strong>
-                  {p.solution}
+                  <strong>Action</strong>
+                  {p.action}
                 </p>
                 <p className="project-outcome">
                   <strong style={{ display: 'inline', textTransform: 'none', fontSize: 'inherit', letterSpacing: 0, color: 'inherit' }}>↑ Outcome: </strong>
@@ -640,31 +617,6 @@ export default function App() {
             </article>
           ))}
         </div>
-      </section>
-
-      <hr className="divider" />
-
-      {/* ── Ideal Clients ─────────────────────────────────────── */}
-      <section className="panel best-fit" aria-labelledby="best-fit-title">
-        <div className="best-fit-copy reveal">
-          <p className="section-label">Who I Work Best With</p>
-          <h2 className="section-title" id="best-fit-title">Fast-Moving Teams That Need Structure</h2>
-          <p>
-            I work best with fast-growing companies, startups, and remote teams that need
-            structure, reliable delivery, and clear project visibility - without the overhead
-            of a full in-house PMO. If your team is scaling quickly, juggling multiple
-            workstreams, or struggling to keep projects on track - I can step in immediately
-            and bring the organisation and momentum you need.
-          </p>
-        </div>
-
-        <ul className="client-signal-grid">
-          {clientSignals.map((signal, i) => (
-            <li className="reveal" key={signal} style={{ transitionDelay: `${i * 0.08}s` }}>
-              {signal}
-            </li>
-          ))}
-        </ul>
       </section>
 
       <hr className="divider" />
@@ -772,17 +724,16 @@ export default function App() {
         {/* CTA section label */}
         <p className="section-label" style={{ justifyContent: 'center' }}>Work With Me</p>
         {/* CTA headline */}
-        <h2 id="cta-title">Have a project in mind? Send me your brief.</h2>
+        <h2 id="cta-title">Let's Build Your Next Successful Project</h2>
         {/* CTA supporting copy */}
         <p>
-          Available for project coordination, process setup, implementation support,
-          scheduling, reporting, and delivery recovery for teams that need momentum.
+          Available for project management leadership, scheduling strategy, PMO governance,
+          and turnaround support for complex delivery programmes.
         </p>
         {/* CTA action buttons - Multiple contact/engagement options */}
         <div className="cta-actions">
           {/* Primary CTA: WhatsApp for quick chat */}
-          <a href="#contact" className="cta-primary">Send me your brief →</a>
-          <a href={waUrl} target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          <a href={waUrl} target="_blank" rel="noreferrer" className="cta-primary">Chat on WhatsApp</a>
           {/* Email for formal engagement */}
           <a href="mailto:iheanachofederals8@gmail.com">Email for Engagement</a>
           {/* Professional network link */}
