@@ -1108,11 +1108,16 @@ footer p {
   color: var(--text-3);
 }
 .footer-advert {
+  flex: 1 0 100%;
   font-size: .9rem;
-  opacity: .85;
+  color: var(--text);
+  text-align: center;
+  opacity: 1;
 }
-.footer-advert strong { color: var(--text); }
-.footer-advert a { color: var(--text-2); }
+.footer-advert strong {
+  color: var(--gold-light);
+  font-weight: 600;
+}
 
 /* ── Sticky CTA ─────────────────────────────────────────────────── */
 .sticky-cta {
