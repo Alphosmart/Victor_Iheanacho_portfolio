@@ -49,6 +49,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  padding-bottom: 3.25rem;
+}
+
 #root {
   width: 100%;
   max-width: none;
@@ -1123,11 +1127,37 @@ footer p {
   color: var(--gold-light);
   font-weight: 600;
 }
+.site-credit-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: .35rem .75rem;
+  min-height: 42px;
+  padding: .55rem 1rem;
+  border-top: 1px solid var(--gold-muted);
+  background: rgba(9, 9, 15, .96);
+  color: var(--text);
+  box-shadow: 0 -8px 28px rgba(0, 0, 0, .35);
+  font-size: .82rem;
+  line-height: 1.35;
+  text-align: center;
+}
+.site-credit-bar strong,
+.site-credit-bar a {
+  color: var(--gold-light);
+  font-weight: 600;
+}
 
 /* ── Sticky CTA ─────────────────────────────────────────────────── */
 .sticky-cta {
   position: fixed;
-  bottom: 2rem; right: 2rem;
+  bottom: 4.9rem; right: 2rem;
   z-index: 200;
   background: var(--gold);
   color: var(--bg);
@@ -1194,6 +1224,13 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
   }
-  .sticky-cta { bottom: 1rem; right: 1rem; font-size: .78rem; }
+  .site-credit-bar {
+    justify-content: flex-start;
+    min-height: 54px;
+    padding: .55rem 1rem;
+    font-size: .76rem;
+    text-align: left;
+  }
+  .sticky-cta { bottom: 4.6rem; right: 1rem; font-size: .78rem; }
   .two-col { grid-template-columns: 1fr; }
 }

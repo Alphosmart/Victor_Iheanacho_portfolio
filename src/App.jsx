@@ -856,6 +856,12 @@ export default function App() {
         </p>
       </footer>
 
+      <div className="site-credit-bar" aria-label="Website builder contact">
+        Built by <strong>Ashamsmart Technology</strong>
+        <a href="tel:+2347036111707">+234 703 611 1707</a>
+        <a href="mailto:ashamsmart1@gmail.com">ashamsmart1@gmail.com</a>
+      </div>
+
       {/* ── Sticky CTA ─────────────────────────────────────────── */}
       <a className="sticky-cta" href={waUrl} target="_blank" rel="noreferrer">
         Start a Conversation →
