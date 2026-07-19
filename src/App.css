@@ -1108,7 +1108,11 @@ footer p {
   color: var(--text-3);
 }
 .footer-advert {
-  flex: 1 0 100%;
+  flex: none;
+  width: 100%;
+  margin-top: .4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
   font-size: .9rem;
   color: var(--text);
   text-align: center;
