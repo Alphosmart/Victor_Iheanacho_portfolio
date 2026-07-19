@@ -850,7 +850,9 @@ export default function App() {
         <p>© {new Date().getFullYear()} Iheanacho Victor Ugochukwu, PMP · Abuja, Nigeria</p>
         <p>Built for impact — delivered with precision.</p>
         <p className="footer-advert">
-          Built by <strong>Ashamsmart</strong>
+          Built by <strong>Alphonsus</strong> ·
+          <a href="tel:+2347036111707">+234 703 611 1707</a> ·
+          <a href="mailto:ashamsmart1@gmail.com">ashamsmart1@gmail.com</a>
         </p>
       </footer>
 

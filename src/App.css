@@ -1114,7 +1114,8 @@ footer p {
   text-align: center;
   opacity: 1;
 }
-.footer-advert strong {
+.footer-advert strong,
+.footer-advert a {
   color: var(--gold-light);
   font-weight: 600;
 }
