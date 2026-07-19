@@ -361,6 +361,23 @@ function useScrolledNav() {
   }, [])
 }
 
+function useFooterAwareCta() {
+  useEffect(() => {
+    const footer = document.querySelector('footer')
+    const cta = document.querySelector('.sticky-cta')
+
+    if (!footer || !cta) return
+
+    const io = new IntersectionObserver(([entry]) => {
+      cta.classList.toggle('is-footer-visible', entry.isIntersecting)
+    })
+
+    io.observe(footer)
+
+    return () => io.disconnect()
+  }, [])
+}
+
 /* ──────────────────────────────────────────────────────────────────
    MAIN APP COMPONENT - Portfolio page structure and content
    ────────────────────────────────────────────────────────────────── */
@@ -387,6 +404,7 @@ export default function App() {
   // Initialize scroll animation and navigation scroll detection hooks
   useReveal()
   useScrolledNav()
+  useFooterAwareCta()
 
   // Asset paths and external URLs
   const base      = import.meta.env.BASE_URL              // Vite base URL for assets
@@ -831,10 +849,10 @@ export default function App() {
       <footer>
         <p>© {new Date().getFullYear()} Iheanacho Victor Ugochukwu, PMP · Abuja, Nigeria</p>
         <p>Built for impact — delivered with precision.</p>
-        <p style={{ marginTop: '1rem', fontSize: '0.9rem', opacity: 0.85 }}>
-          Built by <strong>Alphonsus</strong> · 
-          <a href="tel:+2348033670770" style={{ marginLeft: '0.5rem' }}>+234 803 367 0770</a> · 
-          <a href="mailto:ashamsmart1@gmail.com" style={{ marginLeft: '0.5rem' }}>ashamsmart1@gmail.com</a>
+        <p className="footer-advert">
+          Built by <strong>Alphonsus</strong> ·
+          <a href="tel:+2347036111707">+234 703 611 1707</a> ·
+          <a href="mailto:ashamsmart1@gmail.com">ashamsmart1@gmail.com</a>
         </p>
       </footer>
 

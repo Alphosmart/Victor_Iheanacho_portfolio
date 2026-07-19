@@ -1099,8 +1099,20 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .75rem 1.5rem;
 }
-footer p { font-size: .8rem; color: var(--text-3); }
+footer p {
+  font-size: .8rem;
+  line-height: 1.6;
+  color: var(--text-3);
+}
+.footer-advert {
+  font-size: .9rem;
+  opacity: .85;
+}
+.footer-advert strong { color: var(--text); }
+.footer-advert a { color: var(--text-2); }
 
 /* ── Sticky CTA ─────────────────────────────────────────────────── */
 .sticky-cta {
@@ -1121,6 +1133,11 @@ footer p { font-size: .8rem; color: var(--text-3); }
   background: var(--gold-light);
   transform: translateY(-2px);
   box-shadow: 0 6px 32px var(--gold-glow);
+}
+.sticky-cta.is-footer-visible {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
 }
 
 /* ── Responsive ─────────────────────────────────────────────────── */
@@ -1163,6 +1180,10 @@ footer p { font-size: .8rem; color: var(--text-3); }
   .contact-cards { grid-template-columns: 1fr; }
   .cta-actions { flex-direction: column; align-items: stretch; }
   .cta-actions a { text-align: center; }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .sticky-cta { bottom: 1rem; right: 1rem; font-size: .78rem; }
   .two-col { grid-template-columns: 1fr; }
 }
